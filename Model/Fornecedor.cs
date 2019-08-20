@@ -6,8 +6,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Model
 {
-    [Table("fornecedores_pessoa_juridica")]
-    public class FornecedorPj : Base
+    [Table("fornecedores")]
+    public class Fornecedor : Base
     {
         [Column("nome")]
         public string Nome { get; set; }
@@ -15,8 +15,17 @@ namespace Model
         [Column("telefone")]
         public string Telefone { get; set; }
 
+        [Column("data_nascimento")]
+        public DateTime DataNascimento { get; set; }
+
+        [Column("cpf")]
+        public string Cpf { get; set; }
+
         [Column("cnpj")]
         public string Cnpj { get; set; }
+
+        [Column("rg")]
+        public string Rg { get; set; }
 
         [ForeignKey("IdEmpresa")]
         public Empresa Empresa { get; set; }

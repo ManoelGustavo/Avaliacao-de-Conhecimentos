@@ -3,9 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{01D6734A-796E-4F50-BE3C-7C755A72C8E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{01D6734A-796E-4F50-BE3C-7C755A72C8E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{6A33ECEA-CAFF-4D72-9C02-4A0AB81148E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{6A33ECEA-CAFF-4D72-9C02-4A0AB81148E1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{01D6734A-796E-4F50-BE3C-7C755A72C8E6} = {01D6734A-796E-4F50-BE3C-7C755A72C8E6}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
